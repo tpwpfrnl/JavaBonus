@@ -51,7 +51,7 @@ public class Ls {
 				}
 
 				k = 0;
-				if (all) {
+				if (!all) {
 					for (int i = 0; i < fileList.length; i++) {
 						if (fileList[i].getName().startsWith(".")) {
 							continue;
