@@ -19,7 +19,7 @@ public class Ls {
 	boolean list;
 	boolean help;
 	boolean time;
-	String path = "C:\\Users\\daehk";
+	String path = "jinjinjava";
 	
 	public void run(String[] args) {
 		
@@ -52,13 +52,12 @@ public class Ls {
 
 				k = 0;
 				if (all) {
-					for (int i = 0; i < rev.length; i++) {
-						if (rev[i].getName().startsWith(".")) {
+					for (int i = 0; i < fileList.length; i++) {
+						if (fileList[i].getName().startsWith(".")) {
 							continue;
 						} else {
-							al[k] = rev[i];
+							al[k] = fileList[i];
 							k++;
-
 						}
 					}
 					fileList = al;
